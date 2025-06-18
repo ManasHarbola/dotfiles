@@ -1,0 +1,15 @@
+[[language]]
+name = "cpp"
+auto-format = true
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+auto-format = true
+
+[[language]]
+name = "protobuf"
+formatter = { command = "buf", args = ["format"] }
+language-servers = ["buf"]
+auto-format = true
